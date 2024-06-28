@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Forms</title>
+  <link rel="icon" type="image/png"
+    href="https://wallpapers.com/images/hd/super-mario-yellow-star-character-6ni9jm8kwtjqtbb3.jpg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .header {
+      background-color: darkgray;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      background-image: url("images/qbpaper.jpg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-attachment: fixed;
+    }
+
+    .main {
+      flex: 50%;
+      padding: 20px;
+    }
+
+    textarea {
+      width: 600px;
+      height: 400px;
+      font-family: Copperplate, Papyrus, fantasy;
+    }
+
+    #score {
+      color: yellow;
+      font-family: Copperplate, Papyrus, fantasy;
+      font-size: 30px;
+    }
+  </style>
+  <script>
+    var q1 = 0
+    var q2 = 0
+    var q3 = 0
+    var q4 = 0
+    var q5 = 0
+    var q6 = 0
+    var ctr = 0
+
+
+    function comments() {
+      document.feedback.textbox.value = "Thanks for the Feedback!!!"
+    }
+
+
+    function y1(choice) {
+      q1 = 1
+    }
+    function n1(choice) {
+      q1 = 0
+    }
+    function y2(choice) {
+      q2 = 1
+    }
+    function n2(choice) {
+      q2 = 0
+    }
+    function y3(choice) {
+      q3 = 1
+    }
+    function n3(choice) {
+      q3 = 0
+    }
+    function y4(choice) {
+      q4 = 1
+    }
+    function n4(choice) {
+      q4 = 0
+    }
+    function y5(choice) {
+      q5 = 1
+    }
+    function n5(choice) {
+      q5 = 0
+    }
+    function y6(choice) {
+      q6 = 1
+    }
+    function n6(choice) {
+      q6 = 0
+    }
+
+
+    function end() {
+      ctr = q1 + q2 + q3 + q4 + q5 + q6
+      document.getElementById("score").innerHTML = "Your Score: " + ctr;
+    }
+
+    function erase() {
+      var q1 = 0
+      var q2 = 0
+      var q3 = 0
+      var q4 = 0
+      var q5 = 0
+      var q6 = 0
+      var ctr = 0
+      document.getElementById("score").innerHTML = "Your Score: " + ctr;
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="images/bformslogo.png" height="125px">
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">Mario</a>
+    <a href="luigi.html">Luigi</a>
+    <a href="forms.html">Forms</a>
+    <a href="https://www.youtube.com/watch?v=TnGl01FkMMo" target="_blank">Trailer</a>
+    <a href="mailto: nintendo@noa.nintendo.com">Contact</a>
+    <a href="https://tkp001.github.io/NBSTATIC/" target="_blank">Old Website</a>
+  </div>
+
+  <div class="row">
+    <div class="main">
+      <div style="background-color: grey; padding: 15px 10px; margin-right: 300px; padding-bottom: 20px;">
+        <h2>Super Fun Quiz</h2>
+        <h3>Have you been paying attention?</h3>
+
+        <form name="quiz">
+          Who is Mario's First Best Friend?
+          <br><input type="radio" name="q1" value="N" onclick="n1(this)"> Princess Peach
+          <br><input type="radio" name="q1" value="N" onclick="n1(this)"> Bowser
+          <br><input type="radio" name="q1" value="Y" onclick="y1(this)"> Luigi
+          <br><input type="radio" name="q1" value="N" onclick="n1(this)"> Toad
+          <br>
+          <br>
+          Mario Likes This Power-Up!
+          <br><input type="radio" name="q2" value="N" onclick="n2(this)"> Bee Mushroom
+          <br><input type="radio" name="q2" value="Y" onclick="y2(this)"> Fire Flower
+          <br><input type="radio" name="q2" value="N" onclick="n2(this)"> Poisonous Mushroom
+          <br><input type="radio" name="q2" value="N" onclick="n2(this)"> Gold Flower
+          <br>
+          <br>
+          What Does Mario Love To Eat?
+          <br><input type="radio" name="q3" value="N" onclick="n3(this)"> Lettuce
+          <br><input type="radio" name="q3" value="Y" onclick="y3(this)"> Spaghetti
+          <br><input type="radio" name="q3" value="N" onclick="n3(this)"> Sandwich
+          <br><input type="radio" name="q3" value="N" onclick="n3(this)"> Pizza
+          <br>
+          <br>
+          Who Is Luigi The MOST Afraid Of?
+          <br><input type="radio" name="q4" value="N" onclick="n4(this)"> Koopa Troopa
+          <br><input type="radio" name="q4" value="N" onclick="n4(this)"> Boswer
+          <br><input type="radio" name="q4" value="Y" onclick="y4(this)"> Ghosts
+          <br><input type="radio" name="q4" value="N" onclick="n4(this)"> Goomba
+          <br>
+          <br>
+          Which Game Is Luigi Found In?
+          <br><input type="radio" name="q5" value="N" onclick="n5(this)"> Fortnite
+          <br><input type="radio" name="q5" value="N" onclick="n5(this)"> Brawl Stars
+          <br><input type="radio" name="q5" value="N" onclick="n5(this)"> Genshin Impact
+          <br><input type="radio" name="q5" value="Y" onclick="y5(this)"> Mario Kart 8
+          <br>
+          <br>
+          Who Is One Of Mario's Enemies?
+          <br><input type="radio" name="q6" value="N" onclick="n6(this)"> Sonic
+          <br><input type="radio" name="q6" value="Y" onclick="y6(this)"> Bowser
+          <br><input type="radio" name="q6" value="N" onclick="n6(this)"> Dr. Eggman
+          <br><input type="radio" name="q6" value="N" onclick="n6(this)"> Steve
+          <br>
+          <br>
+          <br>
+          <input type="button" name="Submit" value="Submit" onclick="end()" />
+          <input type="reset" value="Reset" action="Reset" onclick="erase()" />
+          <br>
+          <br>
+          <p id="score">Your Score: 0</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="main">
+      <form name="feedback">
+        <h2>Feedback Form</h2>
+        <textarea name="textbox">Type Comments Here!</textarea>
+        <br>
+        <br>
+        <input type="button" name="Submit Comments" value="Submit Comments" onclick="comments()" />
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <h6>All references are credited to Nintendo</h6>
+    <h6>Made by Tanush Pandya</h6>
+  </div>
+
+</body>
+
+</html>
