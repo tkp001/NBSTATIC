@@ -1,1 +1,1 @@
-Website made for a school assignmnet
+Website made for a school assignment
