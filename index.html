@@ -2,75 +2,132 @@
 <html>
 
 <head>
-  <title>About Mario</title>
-  <link rel="icon" type="image/png" href="Images/favicon.jpg">
+  <title>Super Mario</title>
+  <link rel="icon" type="image/png"
+    href="https://wallpapers.com/images/hd/super-mario-yellow-star-character-6ni9jm8kwtjqtbb3.jpg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .header {
+      background-color: darkred;
+    }
+
+    .main {
+      background-color: #f1f1f1;
+    }
+
+    table {
+      vertical-align: center;
+      height: 250px;
+      width: 100%;
+      border: 1px solid black;
+      background-color: red;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
-<body style="background-color:red;">
-  <h1 style="text-align:center;">Super Mario</h1>
-  
-  <div align="center">
-    <table border="1" cellpadding="20">
-      <tr>
-        <td align="center"><a href="index.html">Mario</a></td>
-        <td align="center"><a href="luigi.html">Luigi</a></td>
-        <td align="center"><a href="https://www.youtube.com/watch?v=TnGl01FkMMo" target="_blank">Movie Trailer</a></td>
-        <td align="center"><a href="mailto: nintendo@noa.nintendo.com">Email Nintendo</a></td>
-      </tr>
-    </table>
-    <br>
-    <a href="#D1">Jump to Details</a>
-  </div>
-  
-  <hr>
-  <br>
-  
-  <div align="center">
-    <img src="https://freepngimg.com/save/114573-mario-photos-download-free-image/1337x1600" width="200" height="250">
-    <img src="Images/mariossb.png" width="270" height="250">
+<body>
+
+  <div class="header">
+    <img src="images/bsupermariologo.png" height="250px">
   </div>
 
-<div align="center">
-  <p>It's a me, Mario! I am a bright and cheerful character that is instantly recongnizable with my trademark moustache,
-    I own a beautiful go-kart that I use to race along my favorite tracks.</p>
-  <p>I live in the Mushroom Kingdom with my brother Luigi. Whenever anyone is in trouble, I always strive to help and be
-    the main character.</p>
-  <p>I love to collect coins, eat spagetti, jump on goombas and koopas!</p>
-</div>
+  <div class="navbar">
+    <a href="index.html">Mario</a>
+    <a href="luigi.html">Luigi</a>
+    <a href="forms.html">Forms</a>
+    <a href="https://www.youtube.com/watch?v=TnGl01FkMMo" target="_blank">Trailer</a>
+    <a href="mailto: nintendo@noa.nintendo.com">Contact</a>
+    <a href="https://tkp001.github.io/NBSTATIC/" target="_blank">Old Website</a>
+  </div>
 
-  <h2 id="D1">Details</h2>
-  
-  <div>
-    <p>Top 3 Friends</p>
-    <ol type="1">
-      <li>Luigi</li>
-      <li>Princess Peach</li>
-      <li>Toad</li>
-    </ol>
-    <p>Favorite Consumables</p>
-    <ul type="disc">
-      <li>Mushrooms</li>
-      <ul>
-        <li>Big Mushroom</li>
-        <li>1UP</li>
-      </ul>
-      <li>Star</li>
-      <li>Coin</li>
-    </ul>
-    <br>
-    <img src="Images/marioholdshell.png" width="135" height="150">
+  <div class="row">
+
+    <div class="side">
+      <h2>Quick Introduction</h2>
+      <h5>Photos</h5>
+      <img src="images/mariosuperstar.png" style="height: 250px;">
+      <img src="images/mariossb.png" style="height: 250px;">
+      <br>
+      <div id="mp">
+        <p>It's a me, Mario! I am a bright and cheerful character that is instantly recongnizable with my trademark
+          moustache,
+          I own a beautiful go-kart that I use to race along my favorite tracks.</p>
+        <p>I live in the Mushroom Kingdom with my brother Luigi. Whenever anyone is in trouble, I always strive to help
+          and be
+          the main character.</p>
+        <p>I love to collect coins, eat spagetti, jump on goombas and koopas!</p>
+      </div>
+      <br>
+      <h5>Extra Images</h5>
+      <img src="images/mariokart.png" style="height: 200px; border: 1px solid black;">
+      <img src="images/smg4marios.jpg" style="height: 200px; border: 1px solid black;"><br>
+
+      <br>
+      <sig>Mario</sig>
+    </div>
+
+    <div class="main">
+      <h2>Details</h2>
+      <h5>Top Friends</h5>
+      <table style=" text-align: center;">
+        <tr>
+          <td><img src="images/2dluigi.png" height="150px"><br>1. Luigi</td>
+          <td><img src="images/2dpeach.png" height="150px"><br>2. Princess Peach</td>
+          <td><img src="images/2dtoad.png" height="150px"><br>3. Toad</td>
+        </tr>
+
+      </table>
+
+      <p>Mario loves making friends through the Mushroom Kingdom!</p>
+      <br>
+      <h5>Favorite Power-Ups</h5>
+      <table>
+        <tr>
+          <td style="padding-left: 40px;"><br>
+            <ol>
+              <li><b>Mushrooms</b></li>
+              <ul>
+                <li>Mega</li>
+                <li>Mini</li>
+                <li>Propeller</li>
+                <li>1UP</li>
+              </ul>
+              <br>
+              <li><b>Flowers</b></li>
+              <ul>
+                <li>Fire</li>
+                <li>Ice</li>
+              </ul>
+            </ol>
+          </td>
+          <td>
+            <img src="images/2d1up.png" height="100px">
+            <br>
+            <img src="images/2dfireflower.png" height="100px">
+          </td>
+          <td style="padding-left: 40px;"><br>
+            <li>Star</li>
+            <li>Coin</li>
+          </td>
+          <td>
+            <img src="images/2dstar.png" height="100px">
+            <img src="images/2dcoin.png" height="100px">
+          </td>
+        </tr>
+
+      </table>
+      <p>Mario has <em>LOTS</em> of enemies.... like Bowser <img src="images/bowsericon.png" height="20px"></p>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <h6>All references are credited to Nintendo</h6>
+    <h6>Made by Tanush Pandya</h6>
   </div>
 
 </body>
+
 </html>
-
-
-<!--
-3 images, emial link, link to external website, table with 6 cells, 3 lists, 2 headings, 3 paragraphs
-
-
-link to game trailer, games luigi is in for nintendo switch, about luigi, orgin, importance to nintendo
-
-https://freepngimg.com/save/114573-mario-photos-download-free-image/1337x1600
-https://www.pngmart.com/files/22/Mario-And-Luigi-PNG-File.png
--->
